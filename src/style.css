@@ -1,0 +1,250 @@
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+.container {
+  padding: 30px 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger-btn,
+.hamburger-close-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0px;
+  right: -350px;
+  bottom: 0px;
+  background-color: var(--Almost-White);
+  text-align: right;
+  width: 250px;
+  padding-top: 30px;
+  padding-right: 22px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburger-menu ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+.hamburger-menu ul li {
+  margin-bottom: 25px;
+}
+
+.hamburger-menu ul li a {
+  text-decoration: none;
+  color: var(--Medium-Gray);
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger-menu ul li a:hover {
+  color: var(--Almost-Black);
+}
+
+.flex {
+  display: flex;
+}
+
+.up-arrow1,
+.up-arrow2 {
+  display: none;
+  margin-left: 5px;
+  height: 8px;
+  position: fixed;
+}
+
+.down-arrow1,
+.down-arrow2 {
+  margin-left: 5px;
+  height: 8px;
+}
+
+.company-hidden-list,
+.features-hidden-list {
+  padding: 15px 15px 10px 15px;
+  display: none;
+  transition: 0.5s ease-in-out;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px #888888;
+  margin-top: 10px;
+}
+.hamburger-menu ul li .hidden-list li {
+  margin: 10px;
+}
+
+.hamburger-menu .log-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hamburger-menu .log-nav .active {
+  border: 1.5px solid var(--Almost-Black);
+  padding: 10px 50px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.hamburger-menu .log-nav .active:hover {
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+}
+
+/*===========Mobile Header Ends From Here================== */
+
+.desk-img {
+  display: none;
+}
+
+.mob-img img {
+  width: 100%;
+}
+
+.featured-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap-reverse;
+}
+
+.featured-container .content {
+  text-align: center;
+}
+
+.featured-container .content p {
+  color: var(--Medium-Gray);
+}
+
+.featured-container .content button {
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+  font-weight: 700;
+  padding: 10px 25px;
+  border: 2px solid var(--Almost-Black);
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.featured-container .content button:hover {
+  color: var(--Almost-Black);
+  background-color: var(--Almost-White);
+}
+
+.desk-featured {
+  display: none;
+}
+
+/*=====Features Section Ends=====*/
+.client-logo-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.client-logo-wrapper ul img {
+  width: 80%;
+}
+
+/*==========Style Width Javascript Ends Here========= */
+
+.attribution {
+  text-align: center;
+  padding: 25px 0px;
+}
+.attribution a {
+  color: var(--Medium-Gray);
+  font-weight: 700;
+}
+
+/*==========Desktop Responsive Style Starts Here==========*/
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0px 20px;
+  }
+  .hamburger-menu {
+    position: inherit;
+    gap: 40px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+  }
+  .hamburger-btn,
+  .hamburger-close-btn {
+    display: none;
+  }
+
+  .hamburger-menu .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger-menu .log-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hamburger-menu ul {
+    gap: 30px;
+  }
+
+  .mob-img {
+    display: none;
+  }
+  .desk-img {
+    display: block;
+  }
+  .desk-img img {
+    width: 100%;
+
+    height: 500px;
+  }
+  .featured-container {
+    padding: 70px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .col-6 {
+    width: 50%;
+  }
+}
+/*=========Style With JavaScript======= */
+.show {
+  display: block;
+}
+
+.up {
+  display: block;
+  margin: 5px;
+}
+.down {
+  display: none;
+}

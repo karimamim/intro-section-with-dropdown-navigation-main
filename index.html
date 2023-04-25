@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <div class="header container">
+        <div class="logo-wrapper">
+          <a href="#">
+            <img src="./images/logo.svg" alt="snap" />
+          </a>
+        </div>
+        <div class="hamburger-menu">
+          <button class="hamburger-close-btn">
+            <img
+              src="./images/icon-close-menu.svg"
+              alt="Hamburger Close Button"
+            />
+          </button>
+          <ul class="navbar-nav">
+            <li class="features">
+              <div class="flex">
+                <a href="#">Features</a>
+                <div>
+                  <img
+                    src="./images/icon-arrow-down.svg"
+                    alt="Down Arrow"
+                    class="down-arrow1"
+                  />
+                  <img
+                    src="./images/icon-arrow-up.svg"
+                    alt="Up Arrow"
+                    class="up-arrow1"
+                  />
+                </div>
+              </div>
+              <ul class="features-hidden-list">
+                <li>
+                  <img src="./images/icon-todo.svg" alt="Todo list" />
+                  <a href="#">Todo List</a>
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="Calendar" />
+                  <a href="#">Calender</a>
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="Reminders" />
+                  <a href="#">Reminders</a>
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="Planning" />
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li class="company">
+              <div class="flex">
+                <a href="#">Company</a>
+                <div>
+                  <img
+                    src="./images/icon-arrow-down.svg"
+                    alt="Down Arrow"
+                    class="down-arrow2"
+                  />
+                  <img
+                    src="./images/icon-arrow-up.svg"
+                    alt="Up Arrow"
+                    class="up-arrow2"
+                  />
+                </div>
+              </div>
+              <ul class="company-hidden-list">
+                <li>
+                  <a href="#">History</a>
+                </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <ul class="log-nav">
+            <li><a href="#">Login</a></li>
+            <li><a class="active" href="#">Register</a></li>
+          </ul>
+        </div>
+        <button class="hamburger-btn">
+          <img src="./images/icon-menu.svg" alt="hamburger btn" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="featured-container">
+        <div class="col-6 content">
+          <div class="container">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn more</button>
+          </div>
+          <div class="container">
+            <div class="client-logo-wrapper">
+              <div class="container">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="./images/client-databiz.svg" alt="databiz" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="./images/client-audiophile.svg"
+                        alt="audiophile"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./images/client-meet.svg" alt="meet" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./images/client-maker.svg" alt="maker" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="desk-img">
+            <img
+              src="./images/image-hero-desktop.png"
+              alt="Desktop Hero Image"
+            />
+          </div>
+          <div class="mob-img">
+            <img src="./images/image-hero-mobile.png" alt="Mobile Hero Image" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Karima Khatun Mim</a>.
+    </div>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
