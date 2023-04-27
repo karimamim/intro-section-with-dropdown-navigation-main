@@ -18,15 +18,6 @@ company.addEventListener("click", () => {
   upArrow2.classList.toggle("up");
 });
 
-//===============Closing Existing list =========
-
-// function closingFeaturesList() {
-//   featuresList.classList.remove("show");
-// }
-// function closingCompanyList() {
-//   companyList.classList.remove("show");
-// }
-
 // ====Showing or Hiding Hamburger Menu========
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const hamburgerbtn = document.querySelector(".hamburger-btn");
