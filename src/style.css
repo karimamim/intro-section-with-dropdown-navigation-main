@@ -93,9 +93,6 @@ body {
   box-shadow: 1px 1px 6px #888888;
   margin-top: 10px;
 }
-.hamburger-menu ul li .hidden-list li {
-  margin: 10px;
-}
 
 .hamburger-menu .log-nav {
   text-align: center;
@@ -115,6 +112,9 @@ body {
 
 /*===========Mobile Header Ends From Here================== */
 
+.desk-text {
+  display: none;
+}
 .desk-img {
   display: none;
 }
@@ -187,6 +187,9 @@ body {
   .header {
     padding: 0px 20px;
   }
+  .container {
+    padding-right: 74px;
+  }
   .hamburger-menu {
     position: inherit;
     gap: 40px;
@@ -227,13 +230,34 @@ body {
 
     height: 500px;
   }
+  .desk-text {
+    display: block;
+    font-size: 60px;
+    text-align: left;
+  }
+  .mb-text {
+    display: none;
+  }
   .featured-container {
     padding: 70px;
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .featured-container .container {
+    text-align: left;
+  }
   .col-6 {
     width: 50%;
+  }
+  .featured-container .content p {
+    line-height: 25px;
+  }
+  .featured-container .content button {
+    margin-top: 25px;
+  }
+  .company-hidden-list,
+  .features-hidden-list {
+    position: absolute;
   }
 }
 /*=========Style With JavaScript======= */
